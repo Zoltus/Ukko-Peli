@@ -7,8 +7,11 @@ namespace Autopeli
     public class TaustanLiikuttaminen : MonoBehaviour
     {
         // Alustetaan nopeus ja startti positio
+        [SerializeField]
         private float speed = 4f;
         private Vector2 StartPosition;
+        [SerializeField]
+        private double temp = -24.8;
 
         void Start()
         {
@@ -23,7 +26,7 @@ namespace Autopeli
             transform.Translate(Vector2.left * speed * Time.deltaTime);
 
             // Jos menn‰‰n backgroundin loppuun niin se looppaa hahmon takaisin alkuun
-            if (transform.position.x < -30.63f)
+            if (transform.position.x < temp)
             {
                 transform.position = StartPosition;
             }
