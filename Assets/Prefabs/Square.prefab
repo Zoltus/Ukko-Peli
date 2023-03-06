@@ -113,11 +113,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1768479509acf234299c17918c28af48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane1: -1.06
-  lane2: -2.81
-  lane3: -4.31
+  lanePositions:
+  - -1.06
+  - -2.81
+  - -4.31
   swipeRange: 50
   tapRange: 10
+  laneChangeDuration: 0.15
 --- !u!114 &5871566183648072144
 MonoBehaviour:
   m_ObjectHideFlags: 0

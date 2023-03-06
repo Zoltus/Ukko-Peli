@@ -1886,10 +1886,6 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5871566183648071983, guid: afbb2ad92f4551e42a7e44bc1267288c, type: 3}
-      propertyPath: laneChangeDuration
-      value: 0.15
-      objectReference: {fileID: 0}
     - target: {fileID: 5871566183648072144, guid: afbb2ad92f4551e42a7e44bc1267288c, type: 3}
       propertyPath: m_DefaultActionMap
       value: GameSwipe
