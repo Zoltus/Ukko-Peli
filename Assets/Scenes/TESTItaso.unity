@@ -487,7 +487,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 395967911}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5871566184462101168}
+        m_TargetAssemblyTypeName: Autopeli.ClosingUI, Assembly-CSharp
+        m_MethodName: CloseInterface
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &395967911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,7 +690,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 448633772}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5871566184462101168}
+        m_TargetAssemblyTypeName: Autopeli.ClosingUI, Assembly-CSharp
+        m_MethodName: CloseInterface
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &448633772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -730,7 +754,7 @@ GameObject:
   - component: {fileID: 452768572}
   m_Layer: 0
   m_Name: TESTIbackground
-  m_TagString: Untagged
+  m_TagString: Tausta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1037,7 +1061,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 469190260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5871566184462101168}
+        m_TargetAssemblyTypeName: Autopeli.ClosingUI, Assembly-CSharp
+        m_MethodName: CloseInterface
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &469190260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2312,7 +2348,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1638130001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5871566184462101168}
+        m_TargetAssemblyTypeName: Autopeli.ClosingUI, Assembly-CSharp
+        m_MethodName: CloseInterface
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1638130001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2723,7 +2771,7 @@ GameObject:
   - component: {fileID: 1886554458}
   m_Layer: 0
   m_Name: rock
-  m_TagString: Untagged
+  m_TagString: Tausta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2959,7 +3007,7 @@ GameObject:
   - component: {fileID: 1952945135}
   m_Layer: 0
   m_Name: Foreground
-  m_TagString: Untagged
+  m_TagString: Tausta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3436,8 +3484,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Auto
       objectReference: {fileID: 0}
+    - target: {fileID: 6027957418318166227, guid: afbb2ad92f4551e42a7e44bc1267288c, type: 3}
+      propertyPath: toClose
+      value: 
+      objectReference: {fileID: 1489231334}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afbb2ad92f4551e42a7e44bc1267288c, type: 3}
+--- !u!114 &5871566184462101168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6027957418318166227, guid: afbb2ad92f4551e42a7e44bc1267288c, type: 3}
+  m_PrefabInstance: {fileID: 5871566184462101167}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d7227c0ca861848ab9228eeeef54d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6645346192950036983
 PrefabInstance:
   m_ObjectHideFlags: 0

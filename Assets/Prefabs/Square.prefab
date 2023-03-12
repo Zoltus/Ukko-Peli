@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5871566183648072145}
   - component: {fileID: 5871566183648072146}
+  - component: {fileID: 6027957418318166227}
   - component: {fileID: 5871566183648071982}
   - component: {fileID: 5871566183648071983}
   - component: {fileID: 5871566183648072144}
@@ -89,6 +90,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6027957418318166227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5871566183648072147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d7227c0ca861848ab9228eeeef54d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toClose: {fileID: 0}
 --- !u!114 &5871566183648071982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +175,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: edd6d502-8420-459e-8e85-ae0eca9bb146
     m_ActionName: "N\xE4pp\xE4imist\xF6/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]"
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ca9a0d24-efdf-49c6-812f-f7638826a052
+    m_ActionName: GameSwipe/Swipe[/Device Simulator Touchscreen/primaryTouch/position]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: "N\xE4pp\xE4imist\xF6"

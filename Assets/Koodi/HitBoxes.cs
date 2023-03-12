@@ -13,8 +13,6 @@ namespace Autopeli
 
         private void Awake()
         {
-    
-            
             kysymys.SetActive(false);
         }
 
@@ -22,6 +20,7 @@ namespace Autopeli
         {
             Destroy(this.gameObject);
             kysymys.SetActive(true);
+            TaustanLiikuttaminen.SlowDown();
             
         }
 

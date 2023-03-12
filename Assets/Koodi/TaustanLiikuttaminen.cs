@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Autopeli
 {
@@ -13,10 +14,14 @@ namespace Autopeli
         [SerializeField]
         private double temp = -24.8;
 
+        static TaustanLiikuttaminen nopeus;
+
         void Start()
         {
             // Tallennetaan starter positio
             StartPosition = transform.position;
+
+            
         }
 
         // Update is called once per frame
@@ -31,6 +36,30 @@ namespace Autopeli
                 transform.position = StartPosition;
             }
         }
+
+        
+
+        // Takes all of the moving things and slows them all down
+        public static void SlowDown()
+        {
+            GameObject[] speeding = GameObject.FindGameObjectsWithTag("Tausta");
+            foreach (GameObject speedy in speeding)
+            {
+                nopeus = speedy.GetComponent<TaustanLiikuttaminen>();
+                nopeus.speed = 0.5f;
+            }
+        }
+        public static void SpeedUp()
+        {
+            GameObject[] speeding = GameObject.FindGameObjectsWithTag("Tausta");
+            foreach (GameObject speedy in speeding)
+            {
+                nopeus = speedy.GetComponent<TaustanLiikuttaminen>();
+                nopeus.speed = 4f;
+            }
+        }
+
+
     }
 }
 
