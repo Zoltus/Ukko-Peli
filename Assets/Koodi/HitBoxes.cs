@@ -7,15 +7,19 @@ namespace Autopeli
 {
     public class HitBoxes : MonoBehaviour
     {
-        [SerializeField]
-        private GameObject kysymys;
+        private static GameObject ui;
+
         
+
+
         private static AudioSource source;
 
         private void Awake()
         {
             source = GetComponent<AudioSource>();
-            kysymys.SetActive(false);
+            
+            ui = GameObject.Find("Kysymys");
+            
         }
 
         private void OnCollisionEnter2D(Collision2D collision)
@@ -23,7 +27,7 @@ namespace Autopeli
             
             source.Play();
             Destroy(this.gameObject);
-            kysymys.SetActive(true);
+            ui.SetActive(true);
             TaustanLiikuttaminen.SlowDown();
             
         }

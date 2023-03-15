@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 5871566183648072144}
   - component: {fileID: 5871566183648071981}
   - component: {fileID: 5871566183648071980}
-  - component: {fileID: 7732285855095122137}
   - component: {fileID: 534996168459812521}
   m_Layer: 0
   m_Name: Square
@@ -245,14 +244,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!81 &7732285855095122137
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5871566183648072147}
-  m_Enabled: 1
 --- !u!82 &534996168459812521
 AudioSource:
   m_ObjectHideFlags: 0
