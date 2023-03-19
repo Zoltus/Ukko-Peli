@@ -26,8 +26,12 @@ namespace Autopeli
         {
             
             source.Play();
+
             Destroy(this.gameObject);
-            ui.SetActive(true);
+
+            ActivateUI activating = collision.gameObject.GetComponent<ActivateUI>();
+            activating.OpenInterface();
+
             TaustanLiikuttaminen.SlowDown();
             
         }
