@@ -9,7 +9,7 @@ namespace Autopeli
     {
         // Alustetaan nopeus ja startti positio
         [SerializeField]
-        private float speed = 4f;
+        private float speed = 3f;
         private Vector2 StartPosition;
         [SerializeField]
         private double temp = -24.8;
@@ -20,13 +20,14 @@ namespace Autopeli
         {
             // Tallennetaan starter positio
             StartPosition = transform.position;
-
+            
             
         }
 
         // Update is called once per frame
         void Update()
         {
+            
             // Liikutetaan kuvaa vasemmalle tietyllä nopeudella, jolloin syntyy illuusio että hahmo liikkuu oikealle
             transform.Translate(Vector2.left * speed * Time.deltaTime);
 
@@ -35,6 +36,7 @@ namespace Autopeli
             {
                 transform.position = StartPosition;
             }
+            
         }
 
         
@@ -55,7 +57,7 @@ namespace Autopeli
             foreach (GameObject speedy in speeding)
             {
                 nopeus = speedy.GetComponent<TaustanLiikuttaminen>();
-                nopeus.speed = 4f;
+                nopeus.speed = 3f;
             }
         }
 

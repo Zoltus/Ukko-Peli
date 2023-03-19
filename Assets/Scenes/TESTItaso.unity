@@ -2987,7 +2987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7273c0fc52bb4b3478eaad106d0d4fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 3
   temp: -21.45
 --- !u!1 &2022355853
 GameObject:
@@ -3222,6 +3222,10 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 543ab8f00d83aa446a716ada9bf16f80, type: 3}
+    - target: {fileID: 1989162660897761636, guid: afbb2ad92f4551e42a7e44bc1267288c, type: 3}
+      propertyPath: toClose
+      value: 
+      objectReference: {fileID: 1489231334}
     - target: {fileID: 5871566183648071981, guid: afbb2ad92f4551e42a7e44bc1267288c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.75

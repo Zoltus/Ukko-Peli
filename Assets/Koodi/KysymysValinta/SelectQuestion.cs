@@ -16,11 +16,7 @@ namespace Autopeli
         
         public TMP_Text QuestionTxt;
 
-        private void Start()
-        {
-            // hitboksiin
-            generateQuestion();
-        }
+        
 
         public void correct()
         {
@@ -35,10 +31,12 @@ namespace Autopeli
             {
                 options[i].GetComponent<AnswerScript>().isCorrect= false;
                 options[i].transform.GetChild(0).GetComponent<TMP_Text>().text = QnA[currentQuestion].Answers[i];
+                
 
                 if (QnA[currentQuestion].CorrectAnswer == i+1)
                 {
                     options[i].GetComponent<AnswerScript>().isCorrect = true;
+                    
                 }
             }
         }

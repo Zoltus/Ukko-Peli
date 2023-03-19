@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5871566183648072145}
   - component: {fileID: 5871566183648072146}
+  - component: {fileID: 1989162660897761636}
   - component: {fileID: 6027957418318166227}
   - component: {fileID: 5871566183648071982}
   - component: {fileID: 218302452206956083}
@@ -20,7 +21,7 @@ GameObject:
   - component: {fileID: 534996168459812521}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,6 +93,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1989162660897761636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5871566183648072147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6ff38d730ab23488ae260c53baeb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toClose: {fileID: 0}
 --- !u!114 &6027957418318166227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d51fee0db6cbb44bd821e5bbc4b76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toOpen: {fileID: 0}
 --- !u!114 &5871566183648071983
 MonoBehaviour:
   m_ObjectHideFlags: 0
