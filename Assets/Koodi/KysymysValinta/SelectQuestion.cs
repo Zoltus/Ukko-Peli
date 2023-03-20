@@ -16,8 +16,12 @@ namespace Autopeli
         
         public TMP_Text QuestionTxt;
 
-        
 
+        private void Start()
+        {
+            // Toimiiko?
+            generateQuestion();
+        }
         public void correct()
         {
             QnA.RemoveAt(currentQuestion);
