@@ -2038,36 +2038,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5902fa5251b9441802cc15eb4184ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QnA:
-  - Question: "Ty\xF6sopimusta ei voi tehd\xE4"
+  lang: 1
+  QnA_FI:
+  - Question: testFi
     Answers:
-    - Suullisesti
-    - Kirjallisesti
-    - Yksipuolisesti
-    - "S\xE4hk\xF6isesti"
-    CorrectAnswer: 3
-  - Question: "M\xE4\xE4r\xE4aikaisen ty\xF6sopimuksen enimm\xE4iskesto on?"
-    Answers:
-    - 1 vuosi
-    - 2 vuotta
-    - 6 kuukautta
-    - "Ei enimm\xE4israjaa"
-    CorrectAnswer: 1
-  - Question: "Koeaika on enint\xE4\xE4n"
-    Answers:
-    - 3kk
-    - 6kk
-    - 9kk
-    - 12kk
+    - a1
+    - a2
+    - a3
+    - a4
     CorrectAnswer: 2
-  - Question: "Ty\xF6ntekij\xE4ll\xE4 on oikeus sairausajan palkkaan, jos h\xE4n
-      on aiheuttanut ty\xF6kyvytt\xF6myytens\xE4 tahallaan"
+  QnA_EN:
+  - Question: testEn
     Answers:
-    - "V\xE4\xE4rin"
-    - Oikein
-    - 
-    - 
-    CorrectAnswer: 1
+    - a1
+    - a2
+    - a3
+    - a4
+    CorrectAnswer: 3
   options:
   - {fileID: 469190257}
   - {fileID: 1638129998}
@@ -2086,7 +2073,6 @@ GameObject:
   - component: {fileID: 1489231335}
   - component: {fileID: 1489231337}
   - component: {fileID: 1489231336}
-  - component: {fileID: 1489231338}
   m_Layer: 5
   m_Name: Kysymys
   m_TagString: Ui
@@ -2157,18 +2143,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489231334}
   m_CullTransparentMesh: 1
---- !u!114 &1489231338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489231334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b55235fccfcfd8b488155c9bb028dbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1638129998
 GameObject:
   m_ObjectHideFlags: 0
