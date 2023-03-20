@@ -12,11 +12,12 @@ namespace Autopeli
 
         public void Answer()
         {
-            // TÃ„HÃ„N JOTAIN
+            // TÄHÄN JOTAIN
             if(isCorrect)
             {
                 Debug.Log("Correct Answer");
                 selectQuestion.correct();
+
             }
             else
             {
