@@ -1771,7 +1771,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5902fa5251b9441802cc15eb4184ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QnA: []
+  lang: 0
+  QnA_FI: []
+  QnA_EN: []
   options:
   - {fileID: 469190257}
   - {fileID: 1638129998}
