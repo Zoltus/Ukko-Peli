@@ -207,11 +207,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 0
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 0, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1772,21 +1772,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lang: 0
-  QnA_FI:
-  - Question: "M\xE4\xE4r\xE4aikaisen ty\xF6sopimuksen enimm\xE4iskesto on?"
-    Answers:
-    - 1 vuosi
-    - 2 vuotta
-    - 6 kuukautta
-    - "ei enimm\xE4israjaa"
-    CorrectAnswer: 1
-  - Question: "Kyll\xE4 vai ei"
-    Answers:
-    - 1 vuosi
-    - 2 vuotta
-    - 
-    - 
-    CorrectAnswer: 1
   QnA_EN: []
   options:
   - {fileID: 469190257}

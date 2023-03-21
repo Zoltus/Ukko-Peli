@@ -1,6 +1,20 @@
 Spawneri homma 
 Kysymys juttu
-Buildi?
+
+Koodi:
+Buildi TOIMIIN
+Perfectaa spawneri että ei kuse seuraavat spawnit
+quiz homma että kysymykset oikein kokoiset
+
+Menut
+Musiikki hiljennys
+Main menussa kielen vaihto lipuilla
+
+Grafiikka:
+tie/taustaa
+Menun taustat
+
+
 
 Määräaikaisen työsopimuksen enimmäiskesto on?
 a) 1 vuosi (oikein)
