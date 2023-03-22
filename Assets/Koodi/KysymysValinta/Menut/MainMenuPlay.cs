@@ -8,18 +8,16 @@ namespace Autopeli
     public class MainMenuPlay : MonoBehaviour
     {
 
-        [SerializeField]
-        public GameObject camera;
+        //[SerializeField]
+        //public GameObject camera;
 
         [SerializeField] 
         public GameObject mainMenu;
 
-        [SerializeField]
-        public GameObject pauseButton;
 
         private void Awake()
         {
-            camera.GetComponent<AudioListener>().enabled = false;
+            //camera.GetComponent<AudioListener>().enabled = false;
             //text.SetActive(true);
             
             
@@ -29,17 +27,19 @@ namespace Autopeli
         public void Play()
         {
             mainMenu.SetActive(false);
-            pauseButton.SetActive(true);
+            //pauseButton.SetActive(true);
             // TÄHÄN LÄHTÖLASKENTA
+            ToGame();
             Time.timeScale = 1;
+            
             // uuteen skeneen main menu?
             //ResetTheGame();
             //mainMenu.SetActive(false);
         }
-
-        public void ResetTheGame()
+        public void ToGame()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(1); // 1 = game, 0 = menu
         }
+
     }
 }

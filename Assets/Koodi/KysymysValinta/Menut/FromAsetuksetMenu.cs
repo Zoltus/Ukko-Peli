@@ -7,8 +7,7 @@ namespace Autopeli
 {
     public class FromAsetuksetMenu : MonoBehaviour
     {
-        [SerializeField]
-        public GameObject mainMenu;
+        
 
         [SerializeField]
         public GameObject asetukset;
@@ -16,12 +15,13 @@ namespace Autopeli
         public void poistuMenuun()
         {
             asetukset.SetActive(false);
-            mainMenu.SetActive(true);
+            ToMainMenu();
+            
         }
 
         public void ToMainMenu()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(0); // 1 = game, 0 = menu
         }
     }
 }

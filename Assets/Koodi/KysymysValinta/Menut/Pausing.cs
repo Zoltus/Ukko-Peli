@@ -23,8 +23,8 @@ namespace Autopeli
             
             //menuToOpen.SetActive(true);
             
-            
-            Time.timeScale = 0;
+            // Laitetaanko laskuri
+            //Time.timeScale = 0;
         }
 
         public void PauseGame()
