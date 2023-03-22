@@ -32,7 +32,7 @@ namespace Autopeli
             pauseButton.SetActive(true);
             // TÄHÄN LÄHTÖLASKENTA
             Time.timeScale = 1;
-
+            // uuteen skeneen main menu?
             //ResetTheGame();
             //mainMenu.SetActive(false);
         }

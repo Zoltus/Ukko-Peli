@@ -12,7 +12,7 @@ namespace Autopeli
         private float speed = 3f;
         private Vector2 StartPosition;
         [SerializeField]
-        private double temp = -24.8;
+        private float temp = -24.8f;
 
         static TaustanLiikuttaminen nopeus;
 
@@ -34,6 +34,7 @@ namespace Autopeli
             // Jos menn‰‰n backgroundin loppuun niin se looppaa hahmon takaisin alkuun
             if (transform.position.x < temp)
             {
+                Debug.Log(transform.position.x);
                 transform.position = StartPosition;
             }
             
