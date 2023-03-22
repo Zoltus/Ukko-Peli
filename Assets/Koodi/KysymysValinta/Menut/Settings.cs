@@ -8,11 +8,15 @@ namespace Autopeli
     {
         [SerializeField]
         public GameObject asetukset;
-
+        [SerializeField]
+        public GameObject menuToClose;
         public void openSettings()
         {
             asetukset.SetActive(true);
+            menuToClose.SetActive(false);
         }
+
+        
         
     }
 }

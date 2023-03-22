@@ -782,6 +782,7 @@ GameObject:
   - component: {fileID: 7342273912664109032}
   - component: {fileID: 7342273912664109033}
   - component: {fileID: 7342273912664109038}
+  - component: {fileID: 4732080749372475800}
   m_Layer: 5
   m_Name: Poistu
   m_TagString: Untagged
@@ -892,6 +893,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4732080749372475800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7342273912664109036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0f7ce159e399b4b9e8494bfe0df369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenu: {fileID: 0}
+  pause: {fileID: 7342273911825119229}
 --- !u!1 &7342273912753271485
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +919,7 @@ GameObject:
   - component: {fileID: 7342273912753271481}
   - component: {fileID: 7342273912753271486}
   - component: {fileID: 7342273912753271487}
+  - component: {fileID: 607482500742066595}
   m_Layer: 5
   m_Name: Asetukset
   m_TagString: Untagged
@@ -1014,3 +1030,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &607482500742066595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7342273912753271485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf8e7d225d9de947b5969e21fd8a716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asetukset: {fileID: 0}
+  menuToClose: {fileID: 7342273911825119229}
