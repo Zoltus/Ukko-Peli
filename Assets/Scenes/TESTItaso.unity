@@ -764,7 +764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -213.35297, y: 15.27179}
+  m_AnchoredPosition: {x: -213.35, y: -18}
   m_SizeDelta: {x: 238.2062, y: 84.7279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &469190259
@@ -1375,8 +1375,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2187,7 +2187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 220.80585, y: 15.27179}
+  m_AnchoredPosition: {x: 223.68, y: -17.59}
   m_SizeDelta: {x: 240.51288, y: 85.5488}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1638130000
@@ -3375,6 +3375,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3922324101384486823}
     - target: {fileID: 4016640146333834499, guid: 0e663855f0af5954389889d4fb8a9a19, type: 3}
+      propertyPath: m_text
+      value: Game paused
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016640146333834499, guid: 0e663855f0af5954389889d4fb8a9a19, type: 3}
       propertyPath: m_fontSize
       value: 40
       objectReference: {fileID: 0}
@@ -3404,7 +3408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7342273911331936234, guid: 0e663855f0af5954389889d4fb8a9a19, type: 3}
       propertyPath: m_text
-      value: Poistu menuun
+      value: Exit to menu
       objectReference: {fileID: 0}
     - target: {fileID: 7342273911331936234, guid: 0e663855f0af5954389889d4fb8a9a19, type: 3}
       propertyPath: m_fontSize
@@ -3507,6 +3511,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7342273911959791506, guid: 0e663855f0af5954389889d4fb8a9a19, type: 3}
+      propertyPath: m_text
+      value: Continue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342273911959791506, guid: 0e663855f0af5954389889d4fb8a9a19, type: 3}
       propertyPath: m_fontSize
       value: 30
       objectReference: {fileID: 0}
@@ -3538,6 +3546,10 @@ PrefabInstance:
       propertyPath: PauseButton
       value: 
       objectReference: {fileID: 2061457150}
+    - target: {fileID: 7342273912520481214, guid: 0e663855f0af5954389889d4fb8a9a19, type: 3}
+      propertyPath: m_text
+      value: Settings
+      objectReference: {fileID: 0}
     - target: {fileID: 7342273912520481214, guid: 0e663855f0af5954389889d4fb8a9a19, type: 3}
       propertyPath: m_fontSize
       value: 30
@@ -3693,7 +3705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Takaisin
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4205,7 +4217,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Poistu menuun
+  m_text: Exit to menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4474,7 +4486,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Asetukset
+  m_text: Settings
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

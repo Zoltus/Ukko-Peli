@@ -1,6 +1,16 @@
 Spawneri homma 
 Kysymys juttu
 
+Englanniksi 
+Main menu settings toimii
+
+Main menu settings 
+ääni
+linkki nappi netti sivulle
+linkki netti sivulle, työlainsäädäntö
+highScore
+
+
 Koodi:
 Buildi TOIMIIN
 Perfectaa spawneri että ei kuse seuraavat spawnit
