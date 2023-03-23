@@ -9,6 +9,7 @@ Main menu settings
 linkki nappi netti sivulle
 linkki netti sivulle, työlainsäädäntö
 highScore
+Options cog nurkkaan
 
 
 Koodi:
