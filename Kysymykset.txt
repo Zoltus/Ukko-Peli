@@ -13,9 +13,8 @@ Options cog nurkkaan
 
 
 Koodi:
-Buildi TOIMIIN
 Perfectaa spawneri että ei kuse seuraavat spawnit
-quiz homma että kysymykset oikein kokoiset
+(quiz homma että kysymykset oikein kokoiset)
 
 Menut
 Musiikki hiljennys
