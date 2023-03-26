@@ -1,6 +1,30 @@
 Spawneri homma 
 Kysymys juttu
-Buildi?
+
+Englanniksi 
+Main menu settings toimii
+
+Main menu settings 
+ääni
+linkki nappi netti sivulle
+linkki netti sivulle, työlainsäädäntö
+highScore
+Options cog nurkkaan
+
+
+Koodi:
+Perfectaa spawneri että ei kuse seuraavat spawnit
+(quiz homma että kysymykset oikein kokoiset)
+
+Menut
+Musiikki hiljennys
+Main menussa kielen vaihto lipuilla
+
+Grafiikka:
+tie/taustaa
+Menun taustat
+
+
 
 Määräaikaisen työsopimuksen enimmäiskesto on?
 a) 1 vuosi (oikein)

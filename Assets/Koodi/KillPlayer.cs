@@ -10,13 +10,13 @@ namespace Autopeli
         private void OnCollisionEnter2D(Collision2D collision)
         {
             Destroy(collision.gameObject);
-            OnApplicationQuit();
+            //OnApplicationQuit();
         }
 
-        private void OnApplicationQuit()
-        {
-            UnityEditor.EditorApplication.isPlaying = false;
-        }
+        //private void OnApplicationQuit()
+        //{
+        //    UnityEditor.EditorApplication.isPlaying = false;
+        //}
 
 
     }

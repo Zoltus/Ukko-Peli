@@ -19,8 +19,12 @@ namespace Autopeli
         {
             camera.GetComponent<AudioListener>().enabled = false;
             //text.SetActive(true);
-            menuToOpen.SetActive(true);
-            Time.timeScale = 0;
+            
+            
+            //menuToOpen.SetActive(true);
+            
+            // Laitetaanko laskuri
+            //Time.timeScale = 0;
         }
 
         public void PauseGame()

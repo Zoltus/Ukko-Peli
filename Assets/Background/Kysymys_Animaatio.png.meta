@@ -1,0 +1,879 @@
+fileFormatVersion: 2
+guid: f257c37bc6743ca4e81536f3da6321dd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_0
+      rect:
+        serializedVersion: 2
+        x: 3338
+        y: 2955
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.56245, y: 16.5}
+        - {x: -24.81245, y: 5.7499695}
+        - {x: -24.81245, y: -16.5}
+        - {x: 14.56255, y: -16.5}
+        - {x: 25, y: -13.9375305}
+        - {x: 25, y: 16.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1901fc91aa723754cbd8324461266633
+      internalID: -345601699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_1
+      rect:
+        serializedVersion: 2
+        x: 4286
+        y: 2952
+        width: 72
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5402fe7305791cb46b6c4c6a3bc198bf
+      internalID: 798978975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_2
+      rect:
+        serializedVersion: 2
+        x: 5233
+        y: 2944
+        width: 97
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f72369e72d2fd4cacb668972a50d68
+      internalID: 2016851932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_3
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 2178
+        width: 135
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49bc11a0fa8b9e43b882afad66b17d9
+      internalID: 1063734734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_4
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 2178
+        width: 198
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ea47755330b374d8b5bc30561cbbf5
+      internalID: 1203673622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_5
+      rect:
+        serializedVersion: 2
+        x: 2278
+        y: 2194
+        width: 244
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665b45c6d4b8efd45b3e7a292e2363d0
+      internalID: 1657764706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_6
+      rect:
+        serializedVersion: 2
+        x: 3212
+        y: 2172
+        width: 293
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640ab61a6aee87649a2fd8d6160c78c0
+      internalID: 638364827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_7
+      rect:
+        serializedVersion: 2
+        x: 4134
+        y: 2184
+        width: 362
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384e20d46ce6dd045a5f3a9ead36995f
+      internalID: -2122466397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_8
+      rect:
+        serializedVersion: 2
+        x: 5066
+        y: 2176
+        width: 414
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68be7ca3e51a5064ebff8696d8496a5f
+      internalID: 258418855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_9
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1623
+        width: 465
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4430b973e9dad41b131d11b6df24bc
+      internalID: 1768845349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_10
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 1619
+        width: 512
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9db20e0fc6f7745ba5b177acf8ac09
+      internalID: 440918982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_11
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 1632
+        width: 564
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea4b7962d21bee4cb8b96bf6bcf9f30
+      internalID: -1175503361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_12
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 1619
+        width: 585
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001ea4f3e4ad1034396f0fe7c9bb392a
+      internalID: -1467007634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_13
+      rect:
+        serializedVersion: 2
+        x: 4019
+        y: 1636
+        width: 594
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ad56317eea89b4b88a4ee1dfcf514c
+      internalID: 1104668560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_14
+      rect:
+        serializedVersion: 2
+        x: 4970
+        y: 1632
+        width: 610
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e079ff32c2f14e44cb17b1b3513256e1
+      internalID: -1371091835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_15
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1111
+        width: 640
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33239f2e49708b041a4d6930219beebd
+      internalID: -1350210773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_16
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1073
+        width: 650
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6122306e0f7e6f4b995f767845e7c88
+      internalID: -1004168479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_17
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 1090
+        width: 679
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbe377c760be4f4080b722b304a6d23
+      internalID: -783670165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_18
+      rect:
+        serializedVersion: 2
+        x: 3018
+        y: 1086
+        width: 683
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d83160e84f04b41888cfec236e8b1a
+      internalID: -839935050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_19
+      rect:
+        serializedVersion: 2
+        x: 3959
+        y: 1098
+        width: 714
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2305e0d201b231246b758eb842b9c263
+      internalID: -867356255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_20
+      rect:
+        serializedVersion: 2
+        x: 4935
+        y: 1107
+        width: 697
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3bc1dfb9bd1264a891cc9d397506a6
+      internalID: 1894254486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_21
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 557
+        width: 696
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc36ea429e8fa441901104d62f905c4
+      internalID: 533743669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_22
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 552
+        width: 718
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9550451c587db4493fc42ce82fb48d
+      internalID: 1107404849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_23
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 557
+        width: 713
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a072f805b0260b459eba1426a7ea0f5
+      internalID: 1612519503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_24
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 557
+        width: 735
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523d4f98a8040c04d941f6983a05a5c6
+      internalID: -516391436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_25
+      rect:
+        serializedVersion: 2
+        x: 3955
+        y: 544
+        width: 727
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ecdbc1a22cfbb4bb357b516efe9ab8
+      internalID: 1188041341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_26
+      rect:
+        serializedVersion: 2
+        x: 4902
+        y: 556
+        width: 743
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42496e29771f8c0408d165dff6d252cd
+      internalID: -1920640898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_27
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 20
+        width: 749
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32fc89b1d308464792d715776b734bd
+      internalID: 1479705904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_28
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 14
+        width: 721
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4a46120d9f1e64b8b25d1a7613430e
+      internalID: -1188967691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_29
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 25
+        width: 743
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2af4edbb3602f4abe88b9966c4cd6d
+      internalID: 129789222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_30
+      rect:
+        serializedVersion: 2
+        x: 2986
+        y: 3
+        width: 749
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9177543afc94840af4e2e68138e479
+      internalID: -1610539770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_31
+      rect:
+        serializedVersion: 2
+        x: 3947
+        y: 20
+        width: 737
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a512cc23d80d3004b9eb0cf236a008f0
+      internalID: 251270593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kysymys_Animaatio_32
+      rect:
+        serializedVersion: 2
+        x: 4885
+        y: 14
+        width: 766
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48227194d1a1d448966a4b070825059
+      internalID: -1559271046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Kysymys_Animaatio_11: -1175503361
+      Kysymys_Animaatio_24: -516391436
+      Kysymys_Animaatio_12: -1467007634
+      Kysymys_Animaatio_25: 1188041341
+      Kysymys_Animaatio_32: -1559271046
+      Kysymys_Animaatio_30: -1610539770
+      Kysymys_Animaatio_9: 1768845349
+      Kysymys_Animaatio_20: 1894254486
+      Kysymys_Animaatio_8: 258418855
+      Kysymys_Animaatio_16: -1004168479
+      Kysymys_Animaatio_26: -1920640898
+      Kysymys_Animaatio_1: 798978975
+      Kysymys_Animaatio_14: -1371091835
+      Kysymys_Animaatio_0: -345601699
+      Kysymys_Animaatio_5: 1657764706
+      Kysymys_Animaatio_28: -1188967691
+      Kysymys_Animaatio_29: 129789222
+      Kysymys_Animaatio_19: -867356255
+      Kysymys_Animaatio_4: 1203673622
+      Kysymys_Animaatio_21: 533743669
+      Kysymys_Animaatio_15: -1350210773
+      Kysymys_Animaatio_22: 1107404849
+      Kysymys_Animaatio_27: 1479705904
+      Kysymys_Animaatio_3: 1063734734
+      Kysymys_Animaatio_23: 1612519503
+      Kysymys_Animaatio_7: -2122466397
+      Kysymys_Animaatio_10: 440918982
+      Kysymys_Animaatio_2: 2016851932
+      Kysymys_Animaatio_13: 1104668560
+      Kysymys_Animaatio_18: -839935050
+      Kysymys_Animaatio_31: 251270593
+      Kysymys_Animaatio_17: -783670165
+      Kysymys_Animaatio_6: 638364827
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

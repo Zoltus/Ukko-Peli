@@ -10,8 +10,11 @@ namespace Autopeli
 
         public SelectQuestion selectQuestion;
 
+        
+
         public void Answer()
         {
+            
             // TÄHÄN JOTAIN
             if(isCorrect)
             {
