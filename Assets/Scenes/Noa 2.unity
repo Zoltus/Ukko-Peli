@@ -222,7 +222,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1125494262269899078}
         m_TargetAssemblyTypeName: Autopeli.ClosingUI, Assembly-CSharp
         m_MethodName: CloseInterface
         m_Mode: 1
@@ -1617,7 +1617,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1125494262269899078}
         m_TargetAssemblyTypeName: Autopeli.ClosingUI, Assembly-CSharp
         m_MethodName: CloseInterface
         m_Mode: 1
@@ -2094,7 +2094,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1125494262269899078}
         m_TargetAssemblyTypeName: Autopeli.ClosingUI, Assembly-CSharp
         m_MethodName: CloseInterface
         m_Mode: 1
@@ -2575,7 +2575,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1125494262269899078}
         m_TargetAssemblyTypeName: Autopeli.ClosingUI, Assembly-CSharp
         m_MethodName: CloseInterface
         m_Mode: 1
@@ -2850,3 +2850,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
+--- !u!114 &1125494262269899078 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1125494263149200157, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
+  m_PrefabInstance: {fileID: 1125494262269899077}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d7227c0ca861848ab9228eeeef54d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
