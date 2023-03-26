@@ -1,39 +1,38 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Autopeli {
     public class Prefab : MonoBehaviour, Slowable {
-        public float speed = 1f;
+        //todo to global thingy
+
+        public float speed = 2f;
         private float orginalSpeed;
         private int speedSlowPercent = 50;
 
-        public static bool slowed;
-
-        public bool IsSlowed {
-            get { return slowed; }
-            set { slowed = value; }
-        }
         void Start() {
-            //Destroy the spawned objects after 9 seconds
-            Destroy(gameObject, 9f);
+            orginalSpeed = speed;
+            //Slows obj on spawn if slomo is on
+            slowDown();
         }
 
         void Update() {
             // Move the object to left at given speed
             transform.Translate(Vector2.left * speed * Time.deltaTime);
+
+            if (gameObject.transform.position.x <= -9) {
+                Destroy(gameObject);
+            }
         }
 
         public void slowDown() {
-            IsSlowed = true;
-            orginalSpeed = speed;
-            speed = speed / 100 * speedSlowPercent;
+            if (GameManager.IsSlowed) {
+                speed = orginalSpeed / 100 * speedSlowPercent;
+            }
         }
 
         public void speedUp() {
-            IsSlowed = false;
-            speed = orginalSpeed;
+            if (!GameManager.IsSlowed) {
+                speed = orginalSpeed;
+            }
         }
-
     }
 }

@@ -8,7 +8,7 @@ namespace Autopeli
     {
         // Define lanes
         [SerializeField]
-        private float[] lanePositions = { -1.06f, -2.81f, -4.31f };
+        private float[] lanePositions = { -0.06f, -1.81f, -3.31f };
 
         // Starts at the middle
         private int currentLane = 1;
@@ -56,7 +56,7 @@ namespace Autopeli
                     // Move up if not at the 0 lane
                     if (Distance.y > swipeRange)
                     {
-                        Debug.Log("Up");
+                        //Debug.Log("Up");
                         if (currentLane > 0)
                         {
                             currentLane--;
@@ -74,7 +74,7 @@ namespace Autopeli
                     // Move down if not at the 2 lane
                     else if (Distance.y < -swipeRange)
                     {
-                        Debug.Log("Down");
+                        //Debug.Log("Down");
                         if (currentLane < 2)
                         {
                             currentLane++;
@@ -102,7 +102,7 @@ namespace Autopeli
                 // Tap 
                 if (Mathf.Abs(Distance.x) < tapRange && Mathf.Abs(Distance.y) < tapRange)
                 {
-                    Debug.Log("Tap");
+                    //Debug.Log("Tap");
                 }
             }
         }
