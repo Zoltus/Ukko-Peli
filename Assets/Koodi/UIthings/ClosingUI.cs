@@ -14,7 +14,8 @@ namespace Autopeli
         public void CloseInterface()
         {
             toClose.SetActive(false);
-            TaustanLiikuttaminen.SpeedUp();
+            Parallax.normalMotionAll();
+            //TaustanLiikuttaminen.SpeedUp();
         }
 
     }

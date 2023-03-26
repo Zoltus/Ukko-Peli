@@ -24,18 +24,11 @@ namespace Autopeli
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            
             source.Play();
-
-            Destroy(this.gameObject);
-
+            Destroy(gameObject);
             ActivateUI activating = collision.gameObject.GetComponent<ActivateUI>();
             activating.OpenInterface();
-
-            TaustanLiikuttaminen.SlowDown();
-            
+            Parallax.slowMotionAll();
         }
-
-        
     }
 }

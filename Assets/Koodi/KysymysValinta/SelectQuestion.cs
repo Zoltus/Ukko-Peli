@@ -11,7 +11,7 @@ namespace Autopeli {
 
         public Lang lang;
 
-        public List<QnA> QnA_EN;
+        private List<QnA> QnA_EN;
 
         //Kysymykset jotka valitaan FI,EN Perusteella
         private List<QnA> questions;
@@ -77,6 +77,8 @@ namespace Autopeli {
                 SetAnswers();
             }
             else {
+                //Resets questions
+                Start();
                 Debug.Log("No questions left");
             }
         }

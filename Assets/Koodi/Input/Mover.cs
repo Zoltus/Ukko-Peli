@@ -8,7 +8,7 @@ namespace Autopeli
     {
         // Define lanes
         [SerializeField]
-        private float[] lanePositions = new float[] { -1.06f, -2.81f, -4.31f };
+        private float[] lanePositions = { -1.06f, -2.81f, -4.31f };
 
         // Starts at the middle
         private int currentLane = 1;
