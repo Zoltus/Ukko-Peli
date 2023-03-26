@@ -4,7 +4,7 @@ namespace Autopeli {
     public class Prefab : MonoBehaviour, Slowable {
         //todo to global thingy
 
-        public float speed = 3.26f;
+        public float speed = 2.63f;
         private float orginalSpeed;
         private int speedSlowPercent = 50;
 

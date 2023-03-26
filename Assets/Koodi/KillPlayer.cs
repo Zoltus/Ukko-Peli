@@ -15,7 +15,7 @@ namespace Autopeli
 
         private void OnApplicationQuit()
         {
-            UnityEditor.EditorApplication.isPlaying = false;
+          //  UnityEditor.EditorApplication.isPlaying = false;
         }
 
 
