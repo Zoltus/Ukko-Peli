@@ -1,25 +1,24 @@
 using UnityEngine;
 
 namespace Autopeli {
-    public class Parallax : MonoBehaviour {
+    public class Parallax : MonoBehaviour, Slowable {
+        public bool IsSlowed {
+            get { return IsSlowed; }
+            set { IsSlowed = value; }
+        }
 
-        public static bool hasSlomo = false;
         public static void slowMotionAll() {
-            hasSlomo = true;
-            Parallax[] parallaxObjects = FindObjectsOfType<Parallax>();
-            foreach (Parallax parallax in parallaxObjects) {
-                parallax.slowMotion();
+            Object[] objects = FindObjectsOfType(typeof(Slowable));
+            foreach (Slowable obj in objects) {
+                obj.slowDown();
             }
         }
-
-        public static void normalMotionAll() {
-            hasSlomo = false;
-            Parallax[] parallaxObjects = FindObjectsOfType<Parallax>();
-            foreach (Parallax parallax in parallaxObjects) {
-                parallax.normalMotion();
+        public static void speedUpAll() {
+            Object[] objects = FindObjectsOfType(typeof(Slowable));
+            foreach (Slowable obj in objects) {
+                obj.speedUp();
             }
         }
-
 
         [SerializeField]
         private float speed = .2f;
@@ -36,12 +35,14 @@ namespace Autopeli {
             _renderer.material.mainTextureOffset += new Vector2((Time.deltaTime * speed) / 10f, 0);
         }
 
-        private void slowMotion() {
+        public void slowDown() {
+            IsSlowed = true;
             orginalSpeed = speed;
             speed = speed / 100 * speedSlowPercent;
         }
 
-        private void normalMotion() {
+        public void speedUp() {
+            IsSlowed = false;
             speed = orginalSpeed;
         }
     }

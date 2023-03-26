@@ -7,16 +7,12 @@ namespace Autopeli
 {
     public class ClosingUI : MonoBehaviour
     {
-        
         [SerializeField]
         private GameObject toClose;
-
         public void CloseInterface()
         {
             toClose.SetActive(false);
-            Parallax.normalMotionAll();
-            //TaustanLiikuttaminen.SpeedUp();
+            Parallax.speedUpAll();
         }
-
     }
 }
