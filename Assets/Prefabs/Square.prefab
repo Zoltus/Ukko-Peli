@@ -157,9 +157,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lanePositions:
-  - -1.06
-  - -2.81
-  - -4.31
+  - -0.84
+  - -2.34
+  - -3.84
   swipeRange: 50
   tapRange: 10
   laneChangeDuration: 0.15

@@ -2672,18 +2672,6 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5871566183648071983, guid: afbb2ad92f4551e42a7e44bc1267288c, type: 3}
-      propertyPath: lanePositions.Array.data[0]
-      value: -0.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 5871566183648071983, guid: afbb2ad92f4551e42a7e44bc1267288c, type: 3}
-      propertyPath: lanePositions.Array.data[1]
-      value: -2.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 5871566183648071983, guid: afbb2ad92f4551e42a7e44bc1267288c, type: 3}
-      propertyPath: lanePositions.Array.data[2]
-      value: -3.84
-      objectReference: {fileID: 0}
     - target: {fileID: 5871566183648072144, guid: afbb2ad92f4551e42a7e44bc1267288c, type: 3}
       propertyPath: m_DefaultActionMap
       value: GameSwipe
