@@ -13,14 +13,10 @@ namespace Autopeli {
         private void OnCollisionEnter2D(Collision2D collision) {
             source.Play();
             Destroy(gameObject);
-            if (Spawner.prefabs.Contains(gameObject)) {
-                Spawner.prefabs.Remove(gameObject);
-            }
             ActivateUI activating = collision.gameObject.GetComponent<ActivateUI>();
             if (activating != null) {
                 activating.OpenInterface();
             }
-
             GameManager.slowDown();
         }
     }

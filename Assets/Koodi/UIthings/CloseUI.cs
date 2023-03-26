@@ -15,7 +15,6 @@ namespace Autopeli
         public void CloseInterfaceNoSpeed()
         {
             toClose.SetActive(false);
-            
         }
     }
 }

@@ -10,17 +10,13 @@ namespace Autopeli
 
         public SelectQuestion selectQuestion;
 
-        
-
         public void Answer()
         {
-            
-            // TÄHÄN JOTAIN
+            // TÃ„HÃ„N JOTAIN
             if(isCorrect)
             {
                 Debug.Log("Correct Answer");
                 selectQuestion.correct();
-
             }
             else
             {

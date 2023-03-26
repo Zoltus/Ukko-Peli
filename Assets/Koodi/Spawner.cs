@@ -5,13 +5,10 @@ namespace Autopeli {
     public class Spawner : MonoBehaviour {
         private Vector2[] spawnPoints = new Vector2[3];
         public float spawnerGap = 1.5f;
+        public float prefabSpeed = 2.63f;
 
         public GameObject rockPrefab;
         public GameObject canisterPrefab;
-
-        public GameObject linePrefab;
-
-        public static List<GameObject> prefabs = new List<GameObject>();
 
         // Start is called before the first frame update
         void Start() {
@@ -43,7 +40,7 @@ namespace Autopeli {
             //Canister lane, 0 = top, 1 = middle, 2 = bottom
             int canisterLane = Random.Range(0, 3);
             //Spawn canister
-            Instantiate(canisterPrefab, spawnPoints[canisterLane], Quaternion.identity);
+            var canister = Instantiate(canisterPrefab, spawnPoints[canisterLane], Quaternion.identity);
             //Spawn rocks
             for (int i = 0; i < rockAmount; i++) {
                 int rockLane = Random.Range(0, 3);

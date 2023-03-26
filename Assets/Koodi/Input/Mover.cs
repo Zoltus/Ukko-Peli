@@ -8,7 +8,7 @@ namespace Autopeli
     {
         // Define lanes
         [SerializeField]
-        private float[] lanePositions = { -0.06f, -1.81f, -3.31f };
+        private float[] lanePositions = { -0.84f, -2.34f, -3.84f };
 
         // Starts at the middle
         private int currentLane = 1;
@@ -18,7 +18,7 @@ namespace Autopeli
         private Vector2 currentPosition;
         private bool stopTouch = false;
 
-        // how long of a swipe to detect 
+        // how long of a swipe to detect
         [SerializeField]
         private float swipeRange;
         [SerializeField]
@@ -99,7 +99,7 @@ namespace Autopeli
 
                 Vector2 Distance = endTouchPosition - startTouchPosition;
 
-                // Tap 
+                // Tap
                 if (Mathf.Abs(Distance.x) < tapRange && Mathf.Abs(Distance.y) < tapRange)
                 {
                     //Debug.Log("Tap");
