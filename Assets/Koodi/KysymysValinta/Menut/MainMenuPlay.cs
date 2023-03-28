@@ -31,7 +31,16 @@ namespace Autopeli
             // TÄHÄN LÄHTÖLASKENTA
             ToGame();
             Time.timeScale = 1;
-            
+            if (SoundManager.Instance != null )
+            {
+                // äänet kuuluviin kun painaa play toisen kerran
+                SoundManager.Instance.musicSource.Play();
+                SoundManager.Instance.carSoundSource.Play();
+            }
+            else
+            {
+                
+            }
             // uuteen skeneen main menu?
             //ResetTheGame();
             //mainMenu.SetActive(false);

@@ -4,8 +4,6 @@ namespace Autopeli
 {
     public class Pausing : MonoBehaviour
     {
-        [SerializeField]
-        public GameObject camera;
 
         [SerializeField]
         public GameObject menuToOpen;
@@ -15,7 +13,7 @@ namespace Autopeli
 
         private void Awake()
         {
-            camera.GetComponent<AudioListener>().enabled = false;
+            
             //text.SetActive(true);
 
 
@@ -29,8 +27,9 @@ namespace Autopeli
         {
             if (Time.timeScale > 0)
             {
+
                 PauseButton.SetActive(false);
-                camera.GetComponent<AudioListener>().enabled = false;
+                SoundManager.Instance.carSoundSource.Stop();
                 //text.SetActive(true);
                 menuToOpen.SetActive(true);
                 Time.timeScale = 0;
@@ -38,7 +37,7 @@ namespace Autopeli
             else
             {
                 PauseButton.SetActive(true);
-                camera.GetComponent<AudioListener>().enabled = true;
+                SoundManager.Instance.carSoundSource.Play();
                 menuToOpen.SetActive(false);
                 //text.SetActive(false);
                 Time.timeScale = 1;

@@ -2,42 +2,104 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 namespace Autopeli
 {
     public class SoundManager : MonoBehaviour
     {
-        [SerializeField]
-        Slider volumeSlider;
+        public Sound[] musicSounds, sfxSounds;
+        public AudioSource musicSource, carSoundSource, sfxSource;
+
+        public static SoundManager Instance;
+
+
+       
+        private void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else 
+            {
+                Destroy(gameObject);
+            }
+        }
 
         private void Start()
         {
-            if(!PlayerPrefs.HasKey("musicVolume"))
+            PlayMusic("Demo_musaa");
+            PlayCar("Ajoneuvoaani4");
+            
+
+        }
+
+
+        public void PlayMusic(string name)
+        {
+            Sound s = Array.Find(musicSounds, x => x.name == name);
+
+            if (s == null)
             {
-                PlayerPrefs.SetFloat("musicVolume", 0.5f);
-                Load();
+                Debug.Log("Sound not found");
             } 
             else
             {
-                Load();
+                musicSource.clip = s.clip;
+                musicSource.Play();
             }
+        }
+        public void PlayCar(string name)
+        {
+            Sound s = Array.Find(musicSounds, x => x.name == name);
 
+            if (s == null)
+            {
+                Debug.Log("Sound not found");
+            }
+            else
+            {
+                carSoundSource.clip = s.clip;
+                carSoundSource.Play();
+            }
         }
 
-        public void ChangeVolume()
+        public void PlaySFX(string name)
         {
-            AudioListener.volume = volumeSlider.value;
-            Save();
+            Sound s = Array.Find(sfxSounds, x => x.name == name);
+
+            if (s == null)
+            {
+                Debug.Log("Sound not found");
+            }
+            else
+            {
+                sfxSource.PlayOneShot(s.clip);
+            }
         }
 
-        private void Load()
+        public void ToggleMusic()
         {
-            volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+            musicSource.mute = !musicSource.mute;
+            carSoundSource.mute = !carSoundSource.mute;
         }
 
-        private void Save()
+        public void ToggleSFX()
         {
-            PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+            sfxSource.mute= !sfxSource.mute;
+        }
+
+        public void MusicVolume(float volume)
+        {
+            musicSource.volume = volume;
+            carSoundSource.volume = volume;
+        }
+
+        public void SFXVolume(float volume)
+        {
+            sfxSource.volume = volume;
         }
 
     }
