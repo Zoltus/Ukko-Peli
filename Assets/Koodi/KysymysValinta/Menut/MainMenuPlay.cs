@@ -26,6 +26,7 @@ namespace Autopeli
 
         public void Play()
         {
+            MenuSound.Instance.PlaySFX("UI_SE1");
             mainMenu.SetActive(false);
             //pauseButton.SetActive(true);
             // TÄHÄN LÄHTÖLASKENTA

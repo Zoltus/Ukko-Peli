@@ -11,6 +11,7 @@ namespace Autopeli
 
         public void OpenSettings()
         {
+            MenuSound.Instance.PlaySFX("UI_SE1");
             asetukset.SetActive(true);
         }
 
