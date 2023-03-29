@@ -34,6 +34,8 @@ namespace Autopeli
             if (SoundManager.Instance != null )
             {
                 // ‰‰net kuuluviin kun painaa play toisen kerran
+                
+
                 SoundManager.Instance.musicSource.Play();
                 SoundManager.Instance.carSoundSource.Play();
             }

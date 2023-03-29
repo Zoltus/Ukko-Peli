@@ -6,15 +6,15 @@ using System;
 
 namespace Autopeli
 {
-    public class SoundManager : MonoBehaviour
+    public class MenuSound : MonoBehaviour
     {
         public Sound[] musicSounds, sfxSounds;
-        public AudioSource musicSource, carSoundSource, sfxSource;
+        public AudioSource musicSource, sfxSource;
 
-        public static SoundManager Instance;
+        public static MenuSound Instance;
 
 
-       
+
         private void Awake()
         {
             if (Instance == null)
@@ -22,7 +22,7 @@ namespace Autopeli
                 Instance = this;
                 DontDestroyOnLoad(gameObject);
             }
-            else 
+            else
             {
                 Destroy(gameObject);
             }
@@ -30,9 +30,9 @@ namespace Autopeli
 
         private void Start()
         {
-            PlayMusic("Demo_musaa");
-            PlayCar("Ajoneuvoaani4");
-            //MenuSound.Instance.musicSource.Stop();
+            //PlayMusic("Demo_musaa");
+            //PlayCar("Ajoneuvoaani4");
+            PlayMusic("Menumusat2");
 
         }
 
@@ -44,27 +44,14 @@ namespace Autopeli
             if (s == null)
             {
                 Debug.Log("Sound not found");
-            } 
+            }
             else
             {
                 musicSource.clip = s.clip;
                 musicSource.Play();
             }
         }
-        public void PlayCar(string name)
-        {
-            Sound s = Array.Find(musicSounds, x => x.name == name);
-
-            if (s == null)
-            {
-                Debug.Log("Sound not found");
-            }
-            else
-            {
-                carSoundSource.clip = s.clip;
-                carSoundSource.Play();
-            }
-        }
+        
 
         public void PlaySFX(string name)
         {
@@ -83,18 +70,18 @@ namespace Autopeli
         public void ToggleMusic()
         {
             musicSource.mute = !musicSource.mute;
-            carSoundSource.mute = !carSoundSource.mute;
+        
         }
 
         public void ToggleSFX()
         {
-            sfxSource.mute= !sfxSource.mute;
+            sfxSource.mute = !sfxSource.mute;
         }
 
         public void MusicVolume(float volume)
         {
             musicSource.volume = volume;
-            carSoundSource.volume = volume;
+       
         }
 
         public void SFXVolume(float volume)

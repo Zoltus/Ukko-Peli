@@ -11,22 +11,22 @@ namespace Autopeli
 
         public void ToggleMusic()
         {
-            SoundManager.Instance.ToggleMusic();
+            MenuSound.Instance.ToggleMusic();
         }
 
         public void ToggleSFX() 
         {
-            SoundManager.Instance.ToggleSFX();
+            MenuSound.Instance.ToggleSFX();
         }
 
         public void MusicVolume()
         {
-            SoundManager.Instance.MusicVolume(_musicSlider.value);
+            MenuSound.Instance.MusicVolume(_musicSlider.value);
         }
 
         public void SFXVolume()
         {
-            SoundManager.Instance.SFXVolume(_sfxSlider.value);
+            MenuSound.Instance.SFXVolume(_sfxSlider.value);
         }
 
     }
