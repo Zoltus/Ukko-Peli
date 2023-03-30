@@ -2821,7 +2821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1482696049965253702, guid: 36a87ffd33d64054aa5d5add8b72a4bd, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Autopeli.UIController, Assembly-CSharp
+      value: Autopeli.UIcontroller2, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1482696051178539604, guid: 36a87ffd33d64054aa5d5add8b72a4bd, type: 3}
       propertyPath: m_Color.b
@@ -3017,7 +3017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3977718203267424356, guid: 36a87ffd33d64054aa5d5add8b72a4bd, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Autopeli.UIController, Assembly-CSharp
+      value: Autopeli.UIcontroller2, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4924436569635483369, guid: 36a87ffd33d64054aa5d5add8b72a4bd, type: 3}
       propertyPath: m_Name
@@ -3089,13 +3089,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1787929206 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3670022571617365644, guid: 36a87ffd33d64054aa5d5add8b72a4bd, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8518770090673941156, guid: 36a87ffd33d64054aa5d5add8b72a4bd, type: 3}
   m_PrefabInstance: {fileID: 1787929201}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a33512aee3489a14a85ef2d28266ee95, type: 3}
+  m_Script: {fileID: 11500000, guid: 35d85818867ea9d4b9349e33df528a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1787929207 stripped
@@ -3154,7 +3154,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1787929206}
-        m_TargetAssemblyTypeName: Autopeli.UIController, Assembly-CSharp
+        m_TargetAssemblyTypeName: Autopeli.UIcontroller2, Assembly-CSharp
         m_MethodName: ToggleSFX
         m_Mode: 1
         m_Arguments:
@@ -3210,7 +3210,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1787929206}
-        m_TargetAssemblyTypeName: Autopeli.UIController, Assembly-CSharp
+        m_TargetAssemblyTypeName: Autopeli.UIcontroller2, Assembly-CSharp
         m_MethodName: ToggleMusic
         m_Mode: 1
         m_Arguments:

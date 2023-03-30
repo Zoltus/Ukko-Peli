@@ -1343,7 +1343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 276499501089717643}
-  - component: {fileID: 3670022571617365644}
+  - component: {fileID: 8518770090673941156}
   m_Layer: 5
   m_Name: SoundPanel
   m_TagString: Untagged
@@ -1373,7 +1373,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3670022571617365644
+--- !u!114 &8518770090673941156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1382,7 +1382,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5033683827140951225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a33512aee3489a14a85ef2d28266ee95, type: 3}
+  m_Script: {fileID: 11500000, guid: 35d85818867ea9d4b9349e33df528a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _musicSlider: {fileID: 1482696049965253702}
