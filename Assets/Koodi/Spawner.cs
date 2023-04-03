@@ -12,6 +12,7 @@ namespace Autopeli {
 
         // Start is called before the first frame update
         void Start() {
+        Application.targetFrameRate = 60;
             Vector2 loc = transform.position;
             spawnPoints[1] = loc;
             spawnPoints[0] = new Vector2(loc.x, loc.y - spawnerGap);
