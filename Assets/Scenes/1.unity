@@ -3896,6 +3896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Auto
       objectReference: {fileID: 0}
+    - target: {fileID: 1125494263149200149, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1125494263149200156, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
       propertyPath: toClose
       value: 
