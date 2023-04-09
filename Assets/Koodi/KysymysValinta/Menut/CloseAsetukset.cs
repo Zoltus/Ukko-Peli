@@ -10,6 +10,7 @@ namespace Autopeli
         public GameObject asetukset;
         public void Close()
         {
+            MenuSound.Instance.PlaySFX("UI_SE1");
             asetukset.SetActive(false);
         }
 

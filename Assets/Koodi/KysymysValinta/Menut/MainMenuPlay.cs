@@ -26,19 +26,33 @@ namespace Autopeli
 
         public void Play()
         {
+            MenuSound.Instance.PlaySFX("UI_SE1");
             mainMenu.SetActive(false);
             //pauseButton.SetActive(true);
             // TÄHÄN LÄHTÖLASKENTA
             ToGame();
             Time.timeScale = 1;
-            
+            if (SoundManager.Instance != null )
+            {
+                // äänet kuuluviin kun painaa play toisen kerran
+                
+
+                SoundManager.Instance.musicSource.Play();
+                SoundManager.Instance.carSoundSource.Play();
+            }
+            else
+            {
+                
+            }
             // uuteen skeneen main menu?
             //ResetTheGame();
             //mainMenu.SetActive(false);
         }
         public void ToGame()
         {
+            
             SceneManager.LoadScene(1); // 1 = game, 0 = menu
+            MenuSound.Instance.musicSource.Stop();
         }
 
     }

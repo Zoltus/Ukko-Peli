@@ -21,7 +21,10 @@ namespace Autopeli
 
         public void ToMainMenu()
         {
+            
             SceneManager.LoadScene(0); // 1 = game, 0 = menu
+            SoundManager.Instance.musicSource.Stop();
+            MenuSound.Instance.musicSource.Play();
         }
     }
 }
