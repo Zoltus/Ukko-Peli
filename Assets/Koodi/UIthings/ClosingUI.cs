@@ -14,9 +14,18 @@ namespace Autopeli
         public void CloseInterface()
         {
             Debug.Log("Close");
+            //closes interface after 2 seconds, so player sees if he answered wrong or right
+            StartCoroutine(ExecuteAfter(2));
+        }
+
+        IEnumerator ExecuteAfter(float time)
+        {
+            yield return new WaitForSeconds(time);
+            // Code to execute after the delay
             toClose.SetActive(false);
             GameManager.speedUp();
         }
+
 
     }
 }

@@ -11,11 +11,13 @@ namespace Autopeli
 
         public void OpenInterface()
         {
-            if (toOpen != null)
-            {
+            if (toOpen != null) {
+                //Generates new questions when the UI is opened
+                var selectQuestion = GameObject.Find("QuizManager").GetComponent<SelectQuestion>();
+                selectQuestion.generateQuestion();
+
                 toOpen.SetActive(true);
             }
-
         }
     }
 }

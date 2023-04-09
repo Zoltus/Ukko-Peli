@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Autopeli {
     public class SelectQuestion : MonoBehaviour {
@@ -80,16 +81,19 @@ namespace Autopeli {
 
         public void correct() {
             questions.RemoveAt(currentQuestion);
-            generateQuestion();
         }
 
         void SetAnswers() {
             for (int i = 0; i < options.Length; i++) {
                 var option = options[i];
                 var answerScript = option.GetComponent<AnswerScript>();
-                answerScript.isCorrect = false;
+                var tmpText = option.transform.GetChild(0).GetComponent<TMP_Text>();
                 var answer = questions[currentQuestion].Answers[i];
-                option.transform.GetChild(0).GetComponent<TMP_Text>().text = answer;
+                var color = option.GetComponent<Image>();
+                //Resets colors
+                color.color = new Color32(3, 50, 245, 255);
+                answerScript.isCorrect = false;
+                tmpText.text = answer;
                 if (answer.Equals("")) {
                     option.SetActive(false);
                 } else {
@@ -101,7 +105,7 @@ namespace Autopeli {
             }
         }
 
-        void generateQuestion() {
+        public void generateQuestion() {
             if (questions.Count > 0) {
                 currentQuestion = Random.Range(0, questions.Count);
                 QuestionTxt.text = questions[currentQuestion].Question;
