@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Autopeli {
     [System.Serializable]
     public class QnA {
@@ -11,4 +13,5 @@ namespace Autopeli {
             CorrectAnswer = correctAnswer;
         }
     }
+
 }
