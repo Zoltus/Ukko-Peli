@@ -99,7 +99,7 @@ namespace Autopeli {
                 } else {
                     option.SetActive(true);
                 }
-                if (questions[currentQuestion].CorrectAnswer == i + 1) {
+                if (questions[currentQuestion].CorrectAnswer == i) {
                     answerScript.isCorrect = true;
                 }
             }

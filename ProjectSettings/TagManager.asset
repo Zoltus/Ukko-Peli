@@ -8,6 +8,7 @@ TagManager:
   - Ui
   - Car
   - items
+  - QuestionsGrid
   layers:
   - Default
   - TransparentFX

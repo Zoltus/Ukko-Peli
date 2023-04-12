@@ -1656,7 +1656,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5902fa5251b9441802cc15eb4184ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lang: 0
   options:
   - {fileID: 27080296}
   - {fileID: 1791903064}
@@ -2143,7 +2142,7 @@ GameObject:
   - component: {fileID: 1273710338}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: QuestionsGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
