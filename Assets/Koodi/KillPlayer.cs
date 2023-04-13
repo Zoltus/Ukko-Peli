@@ -7,16 +7,10 @@ namespace Autopeli
 {
     public class KillPlayer : MonoBehaviour
     {
-
-        private GameObject gameover;
-
-        private void Start() {
-            gameover = GameObject.Find("GameOver");
-            gameover.SetActive(false);
-        }
-
         private void OnCollisionEnter2D(Collision2D collision)
         {
+            //Find inactivate Gameobject.
+            GameObject gameover = GameObject.Find("Canvas").transform.Find("GameOver").gameObject;
             gameover.SetActive(true);
             Time.timeScale = 0;
             Destroy(collision.gameObject);
