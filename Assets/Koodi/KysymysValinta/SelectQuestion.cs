@@ -9,6 +9,8 @@ namespace Autopeli {
         //Kysymykset jotka valitaan FI,EN Perusteella
         private List<QnA> questions;
 
+        public bool hasBeenAswered;
+
         public GameObject[] options;
         public int currentQuestion;
         public TMP_Text QuestionTxt;

@@ -3,7 +3,13 @@
 namespace Autopeli {
     public class GameManager {
 
+        public static int points;
         public static bool IsSlowed { get; set; }
+
+        public static void start() {
+            points = 0;
+            IsSlowed = false;
+        }
 
         public static void slowDown() {
             Debug.Log("Speed");

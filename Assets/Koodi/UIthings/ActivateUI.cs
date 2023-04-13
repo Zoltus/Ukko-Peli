@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Autopeli
@@ -14,8 +12,8 @@ namespace Autopeli
             if (toOpen != null) {
                 //Generates new questions when the UI is opened
                 var selectQuestion = GameObject.Find("QuizManager").GetComponent<SelectQuestion>();
+                selectQuestion.hasBeenAswered = false;
                 selectQuestion.generateQuestion();
-
                 toOpen.SetActive(true);
             }
         }
