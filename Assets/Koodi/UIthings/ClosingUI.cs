@@ -23,6 +23,8 @@ namespace Autopeli
             yield return new WaitForSeconds(time);
             // Code to execute after the delay
             toClose.SetActive(false);
+            GameObject pausebutton = GameObject.Find("Kysymykset ja menu").transform.Find("PauseButton").gameObject;
+            pausebutton.SetActive(true);
             GameManager.speedUp();
         }
 

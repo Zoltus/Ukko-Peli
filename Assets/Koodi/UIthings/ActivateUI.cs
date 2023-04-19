@@ -15,6 +15,9 @@ namespace Autopeli
                 selectQuestion.hasBeenAswered = false;
                 selectQuestion.generateQuestion();
                 toOpen.SetActive(true);
+
+                var pausebutton= GameObject.Find("PauseButton");
+                pausebutton.SetActive(false);
             }
         }
     }
