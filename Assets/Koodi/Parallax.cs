@@ -8,21 +8,20 @@ namespace Autopeli {
         public int speedSlowPercent = 50;
         private MeshRenderer _renderer;
 
-        void Start() {
+        private void Start() {
             _renderer = GetComponent<MeshRenderer>();
         }
 
         // Update is called once per frame
-        void Update() {
+        private void Update() {
             _renderer.material.mainTextureOffset += new Vector2(Time.deltaTime * speed / 10f, 0);
         }
 
         public void slowDown() {
-            if (GameManager.IsSlowed) {
-                Debug.Log("Slow2");
-                orginalSpeed = speed;
-                speed = speed / 100 * speedSlowPercent;
-            }
+            if (!GameManager.IsSlowed) return;
+            Debug.Log("Slow2");
+            orginalSpeed = speed;
+            speed = speed / 100 * speedSlowPercent;
         }
 
         public void speedUp() {
