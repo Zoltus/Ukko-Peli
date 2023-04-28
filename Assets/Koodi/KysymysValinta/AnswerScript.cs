@@ -47,20 +47,24 @@ namespace Autopeli
             }
 
             if (selectQuestion.questions.Count == 0) {
-                Destroy(car);
-                GameObject gameover1 = GameObject.Find("Canvas").transform.Find("GameOver").gameObject;
-                gameover1.SetActive(true);
 
-                GameObject gameover = GameObject.Find("Canvas").transform.Find("GameOver").transform.Find("GameOverText").gameObject;
-                var textMeshProUGUI = gameover.GetComponent<TextMeshProUGUI>();
-                textMeshProUGUI.text = LanguageManager.getLanguage() == 0 ? "Voittaja!" : "Winner!";
+
+                //Find inactivate Gameobject.
+                GameObject gameover = GameObject.Find("Canvas").transform.Find("GameOver").gameObject;
                 gameover.SetActive(true);
                 SoundManager.Instance.carSoundSource.Stop();
                 GameObject pausebutton = GameObject.Find("Kysymykset ja menu").transform.Find("PauseButton").gameObject;
                 pausebutton.SetActive(false);
                 Time.timeScale = 0;
 
-                selectQuestion.gameObject.SetActive(false);
+                GameObject gameoverText = GameObject.Find("Canvas").transform.Find("GameOver").transform.Find("GameOverText").gameObject;
+                var textMeshProUGUI = gameoverText.GetComponent<TextMeshProUGUI>();
+                textMeshProUGUI.text = LanguageManager.getLanguage() == 0 ? "Voittaja!" : "Winner!";
+
+                Destroy(car.gameObject);
+
+                var kysymys = GameObject.Find("Kysymykset ja menu").transform.Find("Kysymys");
+                kysymys.gameObject.SetActive(false);
             }
 
 
