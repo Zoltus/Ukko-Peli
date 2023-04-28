@@ -5,23 +5,13 @@ using UnityEngine.UI;
 
 namespace Autopeli
 {
-
-    public enum VehicleType
-    {
-        Car1,
-        Car2,
-        Car3,
-        Car4,
-        Motorcycle
-    }
-
     public class VehicleSelector : MonoBehaviour
     {
         public Sprite[] vehicleSprites;
 
-        public VehicleType SelectedVehicle = VehicleType.Car1;
-
         public Image selectedCarImage;
+
+        private int selectedVehicleIndex = 0;
 
         void Start()
         {
@@ -42,11 +32,11 @@ namespace Autopeli
 
         void PreviousVehicle()
         {
-            SelectedVehicle--;
+            selectedVehicleIndex--;
 
-            if (SelectedVehicle < 0)
+            if (selectedVehicleIndex < 0)
             {
-                SelectedVehicle = VehicleType.Motorcycle;
+                selectedVehicleIndex = vehicleSprites.Length - 1;
             }
 
             UpdateActiveVehicle();
@@ -54,11 +44,11 @@ namespace Autopeli
 
         void NextVehicle()
         {
-            SelectedVehicle++;
+            selectedVehicleIndex++;
 
-            if (SelectedVehicle > VehicleType.Motorcycle)
+            if (selectedVehicleIndex >= vehicleSprites.Length)
             {
-                SelectedVehicle = VehicleType.Car1;
+                selectedVehicleIndex = 0;
             }
 
             UpdateActiveVehicle();
@@ -66,7 +56,13 @@ namespace Autopeli
 
         void UpdateActiveVehicle()
         {
-            selectedCarImage.sprite = vehicleSprites[(int)SelectedVehicle];
+            selectedCarImage.sprite = vehicleSprites[selectedVehicleIndex];
+        }
+
+        public void SetSelectedVehicleByIndex(int index)
+        {
+            selectedVehicleIndex = Mathf.Clamp(index, 0, vehicleSprites.Length - 1);
+            UpdateActiveVehicle();
         }
     }
 }
