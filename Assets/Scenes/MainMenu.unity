@@ -3777,11 +3777,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f105b804143754eadaaeac2a595298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Car1: {fileID: 1125494263149200149, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
-  Car2: {fileID: 6645346191500397046, guid: 5bf52a115efcb7c4a83bc5dda4923245, type: 3}
-  Car3: {fileID: 1125494263149200149, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
-  Car4: {fileID: 1125494263149200149, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
-  Motorcycle: {fileID: 6645346191500397046, guid: 5bf52a115efcb7c4a83bc5dda4923245, type: 3}
+  vehicleSprites:
+  - {fileID: -1917871415, guid: 4504b93935571554b91aa449c7ac6db0, type: 3}
+  - {fileID: -1082878873, guid: ed0f95e21e714ff4ab1d10fe594fd851, type: 3}
+  - {fileID: -2023305344, guid: 9778ce0a2d3345f4ab031cf00efdd31e, type: 3}
+  - {fileID: 594647563, guid: d5be3fa1748c84742a1c649235795d63, type: 3}
+  - {fileID: 603723616, guid: fd362b3859eefff478adec348e3ef687, type: 3}
   SelectedVehicle: 0
   selectedCarImage: {fileID: 1517359770}
 --- !u!114 &2137128085
