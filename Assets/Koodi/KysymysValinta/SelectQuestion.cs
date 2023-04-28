@@ -71,7 +71,7 @@ namespace Autopeli {
             new QnA("What is the notice period for an employer to inform an employee of a layoff before it begins?",
                 3, "Over one day", "Five days", "Seven days", "Fourteen days"),
             new QnA("Choose the incorrect option regarding an employee's notice period:",
-                2, "14 days if the employment relationship has lasted for up to five years.", "one month if the employment relationship has lasted for more than five years.", "one month if the employment relationship has lasted for more than two years.", "One week."),
+                2, "14 days if the employment relationship has lasted for up to five years.", "one month if the employment relationship has lasted for more than five years.", "one month if the employment relationship has lasted for more than two years.", ""),
             new QnA("An employer can terminate an indefinite-term employment contract only for a valid and weighty reason",
                 1, "Wrong", "Correct", "", ""),
             new QnA("Which of these mentions does not belong to the characteristics of a good employment contract?",
