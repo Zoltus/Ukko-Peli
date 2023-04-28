@@ -7,7 +7,7 @@ namespace Autopeli {
     public class SelectQuestion : MonoBehaviour {
 
         //Kysymykset jotka valitaan FI,EN Perusteella
-        private List<QnA> questions;
+        public List<QnA> questions;
 
         public bool hasBeenAswered;
 
@@ -17,47 +17,7 @@ namespace Autopeli {
 
         private List<QnA> QnA_FI = new List<QnA>() {
             new QnA("Määräaikaisen työsopimuksen enimmäiskesto on?",
-                0, "1 vuosi", "2 vuotta", "6 kuukautta", "ei enimmäisrajaa"),
-            new QnA("Työsopimusta ei voi tehdä?",
-                2, "Suullisesti", "Kirjallisesti", "Yksipuolisesti", "Sähköisesti"),
-            new QnA("Koeaika on enintään?",
-                1, "3kk", "6kk", "9kk", "12kk"),
-            new QnA("Työntekijällä on oikeus sairausajan palkkaan, jos hän on aiheuttanut työkyvyttömyytensä tahallaan.",
-                0, "Väärin", "Oikein", "", ""),
-            new QnA("Työnantaja ei saa missään tapauksissa maksaa palkkaa käteisellä.",
-                1, "Oikein", "Väärin", "", ""),
-            new QnA("Kuinka monta päivää ennen työnantajan on ilmoitettava lomauttamisesta ennen lomautuksen alkamista?",
-                3, "Yli vuorokausi", "Viisi päivää", "Seitsemän päivää", "Neljätoista päivää"),
-            new QnA("Valitse väärä vaihtoehto koskien työntekijän irtisanoutumisaikaa",
-                2, "14 päivää, jos työsuhde on jatkunut enintään viisi vuotta;", "yksi kuukausi, jos työsuhde on jatkunut yli viisi vuotta.", "yksi kuukausi, jos työsuhde on jatkunut yli kaksi vuotta.", ""),
-            new QnA("Työnantaja saa irtisanoa toistaiseksi voimassa olevan työsopimuksen vain asiallisesta ja painavasta syystä.",
-                0, "Oikein", "Väärin", "", ""),
-            new QnA("Työnantaja saa irtisanoa toistaiseksi voimassa olevan työsopimuksen mikäli hän ei pidä työntekijästä.",
-                0, "Väärin", "Oikein", "", ""),
-            new QnA("Minkä näistä maininta ei kuulu hyvän työsopimuksen tunnuspiirteisiin?",
-                3, "Palkka", "Työsopimuksen kesto", "Koeaika", "Siviilisääty"),
-            new QnA("Säännöllinen työaika on enintään",
-                0, "kahdeksan tuntia vuorokaudessa ja 40 tuntia viikossa.", "kymmenen tuntia vuorokaudessa ja 50 tuntia viikossa.", "kaksitoista tuntia vuorokaudessa.", ""),
-            new QnA("Yötyötä on työ, joka tehdään",
-                0, "23 ja 6 välisenä aikana", "21 ja 6 välisen aikana", "00.00 ja 6 välisenä aikana", ""),
-            new QnA("Kuinka pitkä koeaika voi olla 14kk kestävässä työsuhteessa?",
-                1, "7kk", "6kk", "4kk", ""),
-            new QnA("Koeajan aikana työsopimuksen voi purkaa mistä tahansa syystä?",
-                0, "Väärin.", "Oikein", "", ""),
-            new QnA("Vain työnantajalla on oikeus purkaa työsopimus koeajalla.",
-                0, "Väärin", "Oikein", "", ""),
-            new QnA("Viisitoista vuotta täyttänyt saa työntekijänä itse tehdä sekä irtisanoa ja purkaa työsopimuksensa.",
-                0, "Oikein ", "Väärin", "", ""),
-            new QnA("Nuoren työntekijän (alle 18v) työaika ei saa ylittää yhdeksää tuntia vuorokaudessa eikä 48 tuntia viikossa.",
-                0, "Oikein", "Väärin", "", ""),
-            new QnA("Alle 18 vuotta täyttäneen henkilön työaika on pääsääntöisesti sijoitettava kello",
-                0, "6-22 väliseen aikaan ", "8-20 väliseen aikaan", "-14 väliseen aikaan", "12-16 väliseen aikaan"),
-            new QnA("Alle 18 vuotta täyttäneelle henkilölle on annettava vähintään ____ tuntia kestävä keskeytymätön lepoaika vuorokaudessa.",
-                0, "12", "15", "9", "10"),
-            new QnA("Alle 18 vuotta täyttäneelle on annettava vähintään 38 tuntia kestävä viikoittainen vapaa-aika keskeytymättömänä.",
-                0, "Oikein", "Väärin", "", ""),
-            new QnA("Ennen työsuhteen alkamista tai kuukauden kuluessa sen alkamisesta on nuorelle työntekijälle toimitettava terveystarkastus nuoren työntekijän omalla kustannuksella.",
-                0, "Väärin ", "Oikein", "", ""),
+                0, "1 vuosi", "2 vuotta", "6 kuukautta", "ei enimmäisrajaa")
         };
 
         private List<QnA> QnA_EN= new List<QnA>() {
@@ -103,7 +63,7 @@ namespace Autopeli {
 
 
         private void Start() {
-            questions = LanguageManager.getLanguage() == 0 ? QnA_FI : QnA_EN;
+            questions = LanguageManager.getLanguage() == 0 ? new List<QnA>(QnA_FI) : new List<QnA>(QnA_EN);
             Debug.Log("Lang = " + LanguageManager.getLanguage());
             // Toimiiko?
             generateQuestion();
@@ -136,14 +96,21 @@ namespace Autopeli {
         }
 
         public void generateQuestion() {
-            if (questions.Count > 0) {
+            if (questions.Count != 0) {
                 currentQuestion = Random.Range(0, questions.Count);
                 QuestionTxt.text = questions[currentQuestion].Question;
                 SetAnswers();
             }
             else {
                 //Resets questions
-                Start();
+                GameObject gameover = GameObject.Find("Canvas").transform.Find("GameOver").transform.Find("GameOverText").gameObject;
+                var textMeshProUGUI = gameover.GetComponent<TextMeshProUGUI>();
+                textMeshProUGUI.text = LanguageManager.getLanguage() == 0 ? "Voittaja!" : "Winner!";
+                gameover.SetActive(true);
+                SoundManager.Instance.carSoundSource.Stop();
+                GameObject pausebutton = GameObject.Find("Kysymykset ja menu").transform.Find("PauseButton").gameObject;
+                pausebutton.SetActive(false);
+                Time.timeScale = 0;
                 Debug.Log("No questions left");
             }
         }

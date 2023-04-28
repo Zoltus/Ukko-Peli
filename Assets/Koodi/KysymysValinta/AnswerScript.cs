@@ -13,6 +13,7 @@ namespace Autopeli
 
         public SelectQuestion selectQuestion;
         private TextMeshProUGUI pointsText;
+        public GameObject car;
         private void Start() {
             pointsText = GameObject.Find("Points").GetComponent<TextMeshProUGUI>();
         }
@@ -44,6 +45,25 @@ namespace Autopeli
                 selectQuestion.correct();
                 image.color = Color.red;
             }
+
+            if (selectQuestion.questions.Count == 0) {
+                Destroy(car);
+                GameObject gameover1 = GameObject.Find("Canvas").transform.Find("GameOver").gameObject;
+                gameover1.SetActive(true);
+
+                GameObject gameover = GameObject.Find("Canvas").transform.Find("GameOver").transform.Find("GameOverText").gameObject;
+                var textMeshProUGUI = gameover.GetComponent<TextMeshProUGUI>();
+                textMeshProUGUI.text = LanguageManager.getLanguage() == 0 ? "Voittaja!" : "Winner!";
+                gameover.SetActive(true);
+                SoundManager.Instance.carSoundSource.Stop();
+                GameObject pausebutton = GameObject.Find("Kysymykset ja menu").transform.Find("PauseButton").gameObject;
+                pausebutton.SetActive(false);
+                Time.timeScale = 0;
+
+                selectQuestion.gameObject.SetActive(false);
+            }
+
+
         }
     }
 }

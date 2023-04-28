@@ -180,6 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   selectQuestion: {fileID: 1098485139}
+  car: {fileID: 577321509}
 --- !u!114 &27080299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1522,6 +1523,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &577321509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1125494263149200149, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
+  m_PrefabInstance: {fileID: 1125494262269899077}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &631907977 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2521308594532572275, guid: 36a87ffd33d64054aa5d5add8b72a4bd, type: 3}
@@ -1997,6 +2003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5902fa5251b9441802cc15eb4184ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questions: []
   hasBeenAswered: 0
   options:
   - {fileID: 27080296}
@@ -2481,6 +2488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   selectQuestion: {fileID: 1098485139}
+  car: {fileID: 577321509}
 --- !u!114 &1245885215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2954,6 +2962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   selectQuestion: {fileID: 1098485139}
+  car: {fileID: 577321509}
 --- !u!114 &1357386240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3944,6 +3953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   selectQuestion: {fileID: 1098485139}
+  car: {fileID: 577321509}
 --- !u!114 &1791903067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4679,7 +4689,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1125494263149200157, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
   m_PrefabInstance: {fileID: 1125494262269899077}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 577321509}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00d7227c0ca861848ab9228eeeef54d4, type: 3}
@@ -4696,6 +4706,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1951672964}
+    - target: {fileID: 4107158301997356912, guid: 35e048575fac2144ea003335896fa330, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: poistuMenuun
+      objectReference: {fileID: 0}
     - target: {fileID: 4107158301997356912, guid: 35e048575fac2144ea003335896fa330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Autopeli.ToMenuFromGameOver, Assembly-CSharp

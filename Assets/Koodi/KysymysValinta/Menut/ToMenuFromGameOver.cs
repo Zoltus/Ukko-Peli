@@ -13,6 +13,7 @@ namespace Autopeli
 
         public void poistuMenuun()
         {
+            Debug.Log("CLICKKK");
             pause.SetActive(false);
             ToMainMenu();
         }
