@@ -2807,7 +2807,6 @@ GameObject:
   - component: {fileID: 1411055693}
   - component: {fileID: 1411055692}
   - component: {fileID: 1411055691}
-  - component: {fileID: 1411055694}
   m_Layer: 5
   m_Name: Englanti
   m_TagString: Untagged
@@ -2879,7 +2878,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1411055694}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Autopeli.EnglishButton, Assembly-CSharp
         m_MethodName: changeLanguage
         m_Mode: 1
@@ -2929,19 +2928,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411055689}
   m_CullTransparentMesh: 1
---- !u!114 &1411055694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411055689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cd095a15c64465d8a2738d1e0ef6d02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fiButton: {fileID: 2023153500}
 --- !u!1 &1503044348
 GameObject:
   m_ObjectHideFlags: 0
@@ -3380,7 +3366,6 @@ GameObject:
   - component: {fileID: 2023153504}
   - component: {fileID: 2023153503}
   - component: {fileID: 2023153502}
-  - component: {fileID: 2023153505}
   m_Layer: 5
   m_Name: Suomi
   m_TagString: Untagged
@@ -3452,7 +3437,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2023153505}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Autopeli.SuomiButton, Assembly-CSharp
         m_MethodName: changeLanguage
         m_Mode: 1
@@ -3502,19 +3487,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023153500}
   m_CullTransparentMesh: 1
---- !u!114 &2023153505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023153500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa0058e357168ff4ea2589a383e7bbd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  engButton: {fileID: 1411055689}
 --- !u!1 &2034573508
 GameObject:
   m_ObjectHideFlags: 0

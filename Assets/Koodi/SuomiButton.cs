@@ -8,8 +8,6 @@ namespace Autopeli
         private void Start() {
             handleShadows();
         }
-
-        [SerializeField] GameObject engButton;
         public void changeLanguage() {
             Debug.Log("Changed to fi");
             LanguageManager.SetLanguage(0);
