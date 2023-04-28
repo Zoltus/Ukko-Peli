@@ -37,16 +37,16 @@ namespace Autopeli {
 
             firstSpawn = false;
             //Canister amount. 0 = none, 1 = one, 2 = two
-            int rockAmount = Random.Range(0, 2);
+            int rockAmount = 2;
             //Canister lane, 0 = top, 1 = middle, 2 = bottom
             int canisterLane = Random.Range(0, 3);
             //Spawn canister
             Instantiate(canisterPrefab, spawnPoints[canisterLane], Quaternion.identity);
+
             //Spawn rocks
-            for (int i = 0; i < rockAmount; i++) {
-                int rockLane = Random.Range(0, 3);
-                if (rockLane != canisterLane) {
-                    Instantiate(rockPrefab, spawnPoints[rockLane], Quaternion.identity);
+            for (int lane = 0; lane < 3; lane++) {
+                if (lane != canisterLane) {
+                    Instantiate(rockPrefab, spawnPoints[lane], Quaternion.identity);
                 }
             }
         }
