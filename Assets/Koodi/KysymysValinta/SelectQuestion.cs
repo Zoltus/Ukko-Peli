@@ -84,9 +84,9 @@ namespace Autopeli {
             new QnA("Night work is work that is done ",
                 0, " between 23 and 6 ", "between 21 and 6 ", " between 00:00 and 6", ""),
             new QnA("During the probationary period, can the employment contract be terminated for any reason?",
-                0, "Incorrect. However, the employment contract cannot be terminated on discriminatory or otherwise inappropriate grounds in relation to the purpose of the probationary period.", "Correct", "", ""),
+                0, "Incorrect", "Correct", "", ""),
             new QnA("Only the employer has the right to terminate the employment contract during the probationary period.",
-                0, "Incorrect. During the probationary period, the employment contract can be terminated by both parties", "Correct.", "", ""),
+                0, "Incorrect", "Correct", "", ""),
             new QnA("15-year-olds can work as employees and terminate or cancel their employment contracts themselves.",
                 0, "True ", "False", "", ""),
             new QnA("The working hours of a young employee (under 18 years old) may not exceed nine hours per day or 48 hours per week.",
@@ -98,7 +98,7 @@ namespace Autopeli {
             new QnA("At least 38 hours of uninterrupted weekly free time must be given to anyone under 18 years old.",
                 0, "Correct ", "Incorrect", "", ""),
             new QnA("Before the start of employment or within one month of its commencement, a young employee must be provided with a health examination at the young employee's own expense. ",
-                0, "Incorrect - It must be done at the employer's expense.", "Correct", "", ""),
+                0, "Incorrect", "Correct", "", ""),
         };
 
 
