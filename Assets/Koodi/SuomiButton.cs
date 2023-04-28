@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,9 +18,11 @@ namespace Autopeli
             var eng = GameObject.Find("Englanti").GetComponent<Image>();
             var language = LanguageManager.getLanguage();
             if (language == 0) {
+                Debug.Log("Suomi");
                 fi.color = new Color(1, 1, 1);
                 eng.color = new Color(0.5f, 0.5f, 0.5f);
             } else {
+                Debug.Log("enkku");
                 eng.color = new Color(1, 1, 1);
                 fi.color = new Color(0.5f, 0.5f, 0.5f);
             }

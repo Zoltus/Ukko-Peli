@@ -29,5 +29,9 @@ namespace Autopeli {
                 speed = orginalSpeed;
             }
         }
+
+        public void addSpeed(int percent) {
+            speed *= percent;
+        }
     }
 }
