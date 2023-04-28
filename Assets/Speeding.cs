@@ -6,15 +6,16 @@ namespace Autopeli
 {
     public class Speeding : MonoBehaviour {
         [SerializeField]
-        private int speedingPercent = 5;
+        private float addSpeedAmount = 0.05f;
         // Start is called before the first frame update
         void Start(){
             InvokeRepeating("AddSpeed", 0, 1f);
         }
 
        private void AddSpeed() {
-           if (GameManager.IsSlowed) {
-               GameManager.addSpeed(speedingPercent);
+           Debug.Log("Added");
+           if (!GameManager.IsSlowed) {
+               GameManager.addSpeed(addSpeedAmount);
            }
        }
     }
