@@ -26,7 +26,7 @@ namespace Autopeli {
             new QnA("Kuinka monta päivää ennen työnantajan on ilmoitettava lomauttamisesta ennen lomautuksen alkamista?",
                 3, "Yli vuorokausi", "Viisi päivää", "Seitsemän päivää", "Neljätoista päivää"),
             new QnA("Valitse väärä vaihtoehto koskien työntekijän irtisanoutumisaikaa",
-                2, "14 päivää, jos työsuhde on jatkunut enintään viisi vuotta.", "yksi kuukausi, jos työsuhde on jatkunut yli viisi vuotta.", "yksi kuukausi, jos työsuhde on jatkunut yli kaksi vuotta.", "Yksi Viikko."),
+                2, "14 päivää, jos työsuhde on jatkunut enintään viisi vuotta.", "yksi kuukausi, jos työsuhde on jatkunut yli viisi vuotta.", "yksi kuukausi, jos työsuhde on jatkunut yli kaksi vuotta.", ""),
             new QnA("Työnantaja saa irtisanoa toistaiseksi voimassa olevan työsopimuksen vain asiallisesta ja painavasta syystä.",
                 0, "Oikein", "Väärin", "", ""),
             new QnA("Työnantaja saa irtisanoa toistaiseksi voimassa olevan työsopimuksen mikäli hän ei pidä työntekijästä.",
