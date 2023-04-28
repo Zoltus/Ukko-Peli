@@ -38,5 +38,17 @@ namespace Autopeli {
                 slowable.speedUp();
             }
         }
+
+        public static void addSpeed(int percent) {
+            Parallax[] parallaxes = GameObject.FindObjectsOfType<Parallax>();
+            Prefab[] prefabs = GameObject.FindObjectsOfType<Prefab>();
+            Slowable[] objects = new Slowable[parallaxes.Length + prefabs.Length];
+            parallaxes.CopyTo(objects, 0);
+            prefabs.CopyTo(objects, parallaxes.Length);
+
+            foreach (var slowable in objects) {
+                slowable.addSpeed(percent);
+            }
+        }
     }
 }
