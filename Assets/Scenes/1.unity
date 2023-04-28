@@ -3160,7 +3160,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521370876}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 671e36c02a7962b43ac11c5c88f3136a, type: 3}
   m_Name: 
@@ -4647,14 +4647,6 @@ PrefabInstance:
     - target: {fileID: 1125494263149200158, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538734002461035390, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538734002461035390, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 3010319442046059013, guid: 6aa9f407fbc951749a5a4498ab3befae, type: 3}
       propertyPath: vehicleSprites.Array.size
