@@ -13,8 +13,9 @@ namespace Autopeli
 
         private int selectedVehicleIndex = 0;
 
-        void Start()
+        public void Start()
         {
+            selectedVehicleIndex = PlayerPrefs.GetInt("SelectedVehicleIndex", 0);
             UpdateActiveVehicle();
         }
 
@@ -63,6 +64,11 @@ namespace Autopeli
         {
             selectedVehicleIndex = Mathf.Clamp(index, 0, vehicleSprites.Length - 1);
             UpdateActiveVehicle();
+        }
+
+        public void SaveSelectedVehicleIndex()
+        {
+            PlayerPrefs.SetInt("SelectedVehicleIndex", selectedVehicleIndex);
         }
     }
 }
