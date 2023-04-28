@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 namespace Autopeli
@@ -12,6 +9,7 @@ namespace Autopeli
             //Find inactivate Gameobject.
             GameObject gameover = GameObject.Find("Canvas").transform.Find("GameOver").gameObject;
             gameover.SetActive(true);
+            SoundManager.Instance.carSoundSource.Stop();
             GameObject pausebutton = GameObject.Find("Kysymykset ja menu").transform.Find("PauseButton").gameObject;
             pausebutton.SetActive(false);
             Time.timeScale = 0;

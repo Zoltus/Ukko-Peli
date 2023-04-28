@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Autopeli
 {
@@ -6,6 +7,8 @@ namespace Autopeli
         public void changeLanguage() {
             Debug.Log("Changed to eng");
             LanguageManager.SetLanguage(1);
+
+            SuomiButton.handleShadows();
         }
     }
 }
