@@ -30,8 +30,8 @@ namespace Autopeli {
             }
         }
 
-        public void addSpeed(int percent) {
-            speed *= percent;
+        public void addSpeed(float percent) {
+            speed += percent;
         }
     }
 }
