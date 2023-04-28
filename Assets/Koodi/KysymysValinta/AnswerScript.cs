@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -25,11 +26,13 @@ namespace Autopeli
             var image = GetComponent<Image>();
             var imageColor = image.color;
             Debug.Log("Color is: " + imageColor);
+
+            String lang = LanguageManager.getLanguage() == 0 ? "Pisteet: " : "Score: ";
             // TÄHÄN JOTAIN
             if(isCorrect)
             {
                 GameManager.points += 1;
-                pointsText.text = "Score: " + GameManager.points;
+                pointsText.text = lang+ GameManager.points;
                 Debug.Log("Correct Answer");
                 selectQuestion.correct();
                 image.color = Color.green;
